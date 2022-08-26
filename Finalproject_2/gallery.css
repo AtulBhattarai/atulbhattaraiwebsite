@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navigation bar */
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+}
+
+/* Navigation bar Image */
+nav img{
+	width: 300px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+/* Navigation bar list styling */
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+
+/* Navigation bar text color and size*/
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/* Navigation bar hover and underline */
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+	width: 100%;
+}
+/* End to Nav Bar */
+
+
+
+
+
+/* Gallery Images */
+*section{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+}
+.container .heading{
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+.container .heading h1{
+	font-size: 3em;
+	font-weight: bolder;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #222;	
+	font-family: 'Bitter', serif;
+}
+.container .heading h1 span{
+	font-weight: 100;
+}
+.container .box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.container .box .dream{
+	display: flex;
+	flex-direction: column;
+	width: 32.5%;
+}
+.container .box .dream img{
+	width: 100%;
+	padding-bottom: 5px;
+	border-radius: 5px;
+}
+.container .btn{
+	margin: 40px 0 70px 0;
+	background: #222;
+	padding: 15px 40px;
+	border-radius: 5px;
+}
+.container .btn a{
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+	font: bolder;
+	letter-spacing: 3px;
+}
+.box .dream img{
+	filter: grayscale(50%);
+	transition: 1s;
+}
+.box .dream img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+@media only screen and (max-width: 769px){
+	navbar ul{
+		display: none;
+	}
+
+	.container .box{
+	flex-direction: column;
+	}
+	.container .heading h1{
+		font-size: 3em;
+}
+	.container .box .dream{
+	width: 100%;
+}
+
+}
+
+
